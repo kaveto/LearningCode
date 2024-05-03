@@ -1,0 +1,215 @@
+/*@import url();*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==============================
+GLOBAL
+================================*/
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5.5vw;
+    /*vw represents the width of the viewport and it will change the font size according to the screen*/
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    /*rem is relative to root element, the HTML element */
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    word-spacing: 0.3vw;
+    /*vw represents the width of the viewport and it will change the font size according to the screen*/
+}
+
+h6 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #6CAA7F;
+}
+
+P {
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5rem;
+}
+
+button {
+    background: #6CAA7F;
+    border-style: none;
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 0.3rem;
+}
+
+hr {
+    background: #27ae60;
+    color: #27ae60;
+    height: 0.07rem;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .intro {
+    position: relative;
+}
+
+header .intro .head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .intro .head h1 {
+    font-family: "Leckerli One", cursive;
+    color: #000;
+}
+
+header .intro .head h6 {
+    color: #27ae60;
+    letter-spacing: 0.3rem;
+    /*espaciado entre letras*/
+}
+
+header .navbar .navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s;
+
+}
+
+header .navbar .navbar-nav .nav-link:hover::after {
+    width: 60%;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s;
+    border-bottom: 2px solid #27ae60;
+}
+
+header .navbar .navbar-nav i {
+    font-size: 1.2rem;
+    color: #7aca8d;
+    cursor: pointer;
+}
+
+.featured .row .col {
+    position: relative;
+    height: 300px;
+}
+
+.featured .row .col img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.featured .row .col .text {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.featured .row .col .text p {
+    letter-spacing: 0.2rem;
+    line-height: 2px;
+}
+
+.featured .row .col .text a {
+    text-decoration: none;
+    border-style: none;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.featured .row .col .text a::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    background: #2ecc71;
+}
+
+.subscription {
+    background: #defadb;
+}
+
+.subscription .row .sub input {
+    outline: none;
+    border: 1px solid #6CAA7F;
+}
+
+.subscription .row .sub input::placeholder {
+    font-size: 0.9rem;
+}
+
+.blog .row .post a {
+    font-size: 0.9rem;
+    color: #27ae60;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+}
+
+.blog .row .sidebar .side1 h6 {
+    font-size: 1rem;
+}
+
+.blog .row .sidebar .side2 .row .sidetext h4 {
+    font-size: 0.8rem;
+}
+
+.blog .row .sidebar .side2 .row .sidetext a {
+    text-decoration: none;
+    border-style: none;
+    color: #6CAA7F;
+    font-size: 0.8rem;
+}
+
+.blog .side3 .one {
+    height: 300px;
+    position: relative;
+}
+
+.blog .side3 .one img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.blog .side3 .one .text {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 10rem 1.1rem 0 1.1rem;
+}

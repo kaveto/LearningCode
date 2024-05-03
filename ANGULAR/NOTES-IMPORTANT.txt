@@ -1,0 +1,20 @@
+Creating a New Project with Modules:
+When you create a new Angular project, you won’t have any modules by default unless you specify otherwise.
+To create a module-based app, use the --no-standalone flag when generating a new project:
+
+ng new my-app --no-standalone
+
+This will ensure that the familiar app.module.ts file is included in your project.
+
+/////////////////////////////////////////////////////////////////////////////////
+creating a routing module using routing. Use module flag to link with its root file
+
+ng g module name --routing --module=app
+
+ng g module name --flat --module=nombre_carpeta_padre(o contenedor de los componentes hijos)
+
+
+////////////////////////////////////////////////////////////////////////////////////
+generate components inside a folder
+
+ng g c user/user --flat

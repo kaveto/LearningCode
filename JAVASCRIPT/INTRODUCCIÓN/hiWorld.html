@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="./styles.css">
+    <title>First Javascript</title>
+    <!--#2nd way to use JavaScript-->
+    <script defer> //defer tells browser to load html first and then the scripts
+        alert("Load script from head!");
+    </script>
+    <!--#3rd way to use JavaScript and the best one
+    load from and external file-->
+    <script defer
+            src="./hiWorld.js">
+            </script>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <!--Access to the document thought this script method and write in it.
+    #First way to use JavaScript
+    script must be inside body, to load html first, then script
+    Important notes:
+	    - Javascript es sensible a uppercase and lowercase.
+	    - Respect la syntax of camel case type, like getElementById, otherwise it wont work.
+		- Period y coma al final de each clause.
+	-->
+    <script>
+        document.write('<h2>Hello World!</h2>');
+        alert('Load script from body'); //This show the entire HTML Document Object
+        console.log("Hi I'm a Console Log");// This only shows on the browser's developer tools 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<h1>Angular is running</h1>
+<div [ngSwitch]="myValue">
+    <div *ngSwitchCase="1">
+        <p>I am 1st</p>
+    </div>
+    <div *ngSwitchCase="2">
+        <p>I am 2nd</p>
+    </div>
+    <div *ngSwitchCase="3">
+        <p>I am 3rd</p>
+    </div>
+    <div *ngSwitchDefault>
+        <p>I am default</p>
+    </div>
+</div>
+
+<ul>
+    <li *ngFor="let employee of employees">{{employee}}</li>
+</ul>
+
+<table border="1">
+    <!-- encabezado tabla -->
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <!-- contenido tabla -->
+    <tbody>
+        <tr *ngFor="let employee of employeesList; index as i">
+            <td>{{i+1}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.age}}</td>
+        </tr>
+    </tbody>
+</table>
