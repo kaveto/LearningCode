@@ -11,5 +11,10 @@ Learning Back End
 - Python
 - MySql
 
+Learning QA Automation
+- Appium
+- Selenium 
+- Unit Tes
+
 Other Learning
 - Laserfiche
